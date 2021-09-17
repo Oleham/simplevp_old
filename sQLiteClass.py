@@ -11,7 +11,7 @@ class Database:
         
         s = requests.Session()
 
-        baseUrl = endpoint + "/vendors/"
+        baseUrl = "https://" + endpoint + "/vendors/"
 
         #log in
         body = {"email": mail, "password": password}

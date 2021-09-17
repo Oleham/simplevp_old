@@ -9,7 +9,7 @@ def deleteJobsLokalDir(mappe):
         
 def downloadJobs(selectedJobs, endpoint, email, password, lokalDir):
 
-    baseUrl = endpoint + "/vendors/"
+    baseUrl = "https://" + endpoint + "/vendors/"
 
     s = requests.Session()
 
@@ -75,7 +75,7 @@ def uploadJobs(job_id_list, endpoint, email, password, tpf_path):
     """
     Uploads file_name in tpf_path to the corresponding job site according to job_id
     """
-    base_url = endpoint + "/vendors/"
+    base_url = "https://" + endpoint + "/vendors/"
 
     s = requests.Session()
 

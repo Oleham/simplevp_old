@@ -111,7 +111,7 @@ def download():
 def upload():
    tbDownloaded = lng.checkJobs()
    lng.update_table("UP")
-   filehandling.uploadJobs(tbDownloaded, e1.get(), e2.get(), e3.get(), e4.get().encode('unicode-escape').decode())
+   filehandling.uploadJobs(tbDownloaded, e1.get(), e2.get(), e3.get(), e5.get().encode('unicode-escape').decode())
    simpleVPDB.update_Nedlastinger_with_ultime(tbDownloaded)
 
 if __name__ == '__main__':
